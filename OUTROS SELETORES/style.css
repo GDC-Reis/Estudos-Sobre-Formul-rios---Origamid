@@ -1,0 +1,32 @@
+p [required]{
+    border: 2px solid tomato;
+}
+
+[href="#contato"]{
+    border: 2px solid greenyellow;
+}
+
+[href^="#"]{ /*hre^= -> significa que queremos selecionar os elementos em href que começem com # (geralmente utilizado para links internos no site)*/
+    background: tomato;
+}
+
+[href$=".com"]{ /*hre$= -> significa que queremos selecionar os elementos em href que terminam com # (geralmente utilizado para links internos no site)*/
+    background: green;
+}
+
+section > h2{   /*Seleciona apenas o filhon (h2) dentro de section*/
+    color: tomato;
+}
+
+p{
+    margin: 0px;
+}
+
+article{
+    background: lightgreen;
+    padding: 10px;
+}
+
+p + p{ /*Apenas seleciona o elemento p que contem um elemento p antes dele (não seleciona o primeiro elemento p porque não tem nenhum elemento p antes dele)*/
+    margin-top: 20px;
+}
